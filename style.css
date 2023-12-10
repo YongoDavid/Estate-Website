@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: black; */
+}
+
+header{
+   
+}
+
+/* NAVIGATION AREA  */
+nav{
+    padding-top: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    margin-right: 13em;
+}
+nav li a {
+    text-decoration: none;
+    padding: 30px;
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70.187%; /* 12.634px */
+}
+#THELOGO{
+    margin-right: 12em;
+}
+.Nav-background{
+    position: relative;
+    z-index: -10;
+    bottom: 5em;
+}
+.Nav-line{
+margin-left: auto;
+margin-right: auto;
+position: relative;
+top: 10px;
+width: 1015px;
+height: 0.5px;
+z-index: 10;
+background: #FFF;
+}
+.Hero-content{
+    margin-top: 8em;
+    display: flex;
+    position: absolute;
+}
+.Hero-content h1{
+    width: 584px;
+    margin-left: 5em;
+    margin-top: 4em;
+    text-align: left;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 55px; /* 134.615% */
+    letter-spacing: -1px;
+    text-transform: capitalize;
+}
+.Nav-map{
+    position: absolute;
+    left: 52em;
+}
+.Hero-option{
+justify-content: center;
+align-items: center;
+display: flex;
+margin-left: 20px;
+text-align: center;
+width: 408px;
+height: 58px;
+flex-shrink: 0;
+border-radius: 10px;
+border: 1px solid rgba(0, 0, 0, 0.20);
+background: #FFF;
+
+padding-top: 13px;
+padding-bottom: 13px;
+}
+.Hero-option .Button1  > button{
+display: flex;
+width: 128px;
+height: 35px;
+padding: 15px 26px 15px 23px;
+justify-content: center;
+align-items: center;
+gap: 12px;
+flex-shrink: 0;
+
+border-radius: 5px 0px 0px 5px;
+border: 1px solid #E6E6E6;
+background: #F9F9F9;
+}
+.Hero-option .Button2  > button{
+display: flex;
+width: 176px;
+height: 35px;
+padding: 15px 17px 15px 23px;
+justify-content: flex-end;
+align-items: center;
+gap: 22px;
+flex-shrink: 0;
+
+border: 1px solid #E6E6E6;
+background: #F9F9F9;
+}
+.Hero-option .Button3  > button {
+display: flex;
+width: 59.001px;
+height: 35px;
+padding: 19px 19.422px 19px 19.578px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+
+border-radius: 0px 5px 5px 0px;
+border: 1px solid #E6E6E6;
+background: var(--primary-color, #23A6F0);
+}
+
