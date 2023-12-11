@@ -13,6 +13,9 @@ header{
 }
 
 /* NAVIGATION AREA  */
+.Nav-background{
+    height: 10%;
+}
 nav{
     padding-top: 20px;
     position: relative;
@@ -217,3 +220,45 @@ font-weight: 600;
 line-height: 25px; /* 134.615% */
 text-transform: capitalize;
 }
+
+/* THE LIST OF PROPERTIES SECTION  */
+.List-of-properties{
+    background: #F5F5F5;
+}
+.Area1{
+    padding: 20px 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    display: flex;
+}
+.Area1-svg{
+    padding: 20px 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    display: flex;
+}
+.Area1 button{
+width: 200px;
+height: 65px;
+flex-shrink: 0;
+border-radius: 5px;
+background: #F4511E;
+border: none;
+box-shadow: 0px 1.852px 3.148px 0px rgba(248, 90, 71, 0.02), 0px 8.148px 6.519px 0px rgba(248, 90, 71, 0.03), 0px 20px 13px 0px rgba(248, 90, 71, 0.04);
+}
+.Area1 h1{
+color: var(--text-gray-900, #18191F);
+font-feature-settings: 'salt' on, 'liga' off;
+font-family: Inter;
+font-size: 26px;
+font-style: normal;
+font-weight: 800;
+line-height: 64px; /* 177.778% */
+text-transform: capitalize;
+}
+.Area2{
+    padding: 20px 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
