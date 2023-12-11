@@ -136,10 +136,12 @@ background: var(--primary-color, #23A6F0);
 
 /* FIRST MAIN CONTENT  */
 main{
-    padding: 25px 20px;
+    padding: 20px 20px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 main h1{
-margin-left: 55px;
+margin-left: 100px;
 color: var(--text-gray-900, #18191F);
 font-feature-settings: 'salt' on, 'liga' off;
 font-family: Inter;
@@ -149,33 +151,69 @@ font-weight: 800;
 line-height: 64px; /* 177.778% */
 text-transform: capitalize;
 }
+main > svg{
+    position: absolute;
+    left: 200px;
+    margin-top: -10px;
+}
+main  img{
+    margin-left: 40px;
+}
+
+/* THE COST INNER SECTION  */
 .Living-cost-area{
-    position: relative;
-    left: 35em;
-    bottom: 30em;
+    padding: 30px;
+    position: absolute;
+    top: 150%;
+    left: 40%;
+}
+.cost-text{
+position: relative;
+top: -10%;
+left: 37%;
 }
 .Cost1{
+    position: relative;
     display: flex;
-    margin-top: -40px;
 }
-.Cost-inner{
-    padding: 25px;
-}   
 .Thesvg1 svg{
-    position: absolute;
-    bottom: 10em;
-    left: 3.7em;
-    z-index: 3;
+    position: relative;
+    top: 4.5em;
+    left: 48%;
+    /* z-index: 2; */
 }
 .Thesvg2 svg{
-    position: absolute;
-    bottom: 18em;
-    left: 13.9em;
-    z-index: 3;
+    position: relative;
+    top: 4.5em;
+    left: 47%;
 }
 .Thesvg3 svg{
-    position: absolute;
-    bottom: 18em;
-    left: 24.5em;
-    z-index: 3;
+    position: relative;
+    top: 4.5em;
+    left: 38%;
+}
+.Thesvg4 svg{
+    position: relative;
+    top: 4.5em;
+    left: 48%;
+}
+.Thesvg5 svg{
+    position: relative;
+    top: 4.3em;
+    left: 48%;
+}
+.Thesvg6 svg {
+    position: relative;
+    top: 4.5em;
+    left: 48%;
+}
+.cost-text{
+color: var(--text-gray-900, #18191F);
+font-feature-settings: 'salt' on, 'liga' off;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 25px; /* 134.615% */
+text-transform: capitalize;
 }
