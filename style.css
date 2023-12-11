@@ -232,21 +232,37 @@ text-transform: capitalize;
     display: flex;
 }
 .Area1-svg{
+    position: relative;
+    left: 5em;
+    top: -55px;
     padding: 20px 20px;
     margin-left: 80px;
     margin-right: 80px;
     display: flex;
 }
 .Area1 button{
-width: 200px;
-height: 65px;
+position: relative;
+left: 65em;
+margin-top: 7px;
+width: 120px;
+height: 45px;
 flex-shrink: 0;
 border-radius: 5px;
 background: #F4511E;
 border: none;
 box-shadow: 0px 1.852px 3.148px 0px rgba(248, 90, 71, 0.02), 0px 8.148px 6.519px 0px rgba(248, 90, 71, 0.03), 0px 20px 13px 0px rgba(248, 90, 71, 0.04);
+
+color: #FFF;
+text-align: center;
+font-family: Manrope;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
 .Area1 h1{
+position: relative;
+left: 80px;
 color: var(--text-gray-900, #18191F);
 font-feature-settings: 'salt' on, 'liga' off;
 font-family: Inter;
@@ -257,8 +273,58 @@ line-height: 64px; /* 177.778% */
 text-transform: capitalize;
 }
 .Area2{
-    padding: 20px 20px;
-    margin-left: 80px;
-    margin-right: 80px;
+position: relative;
+left: 8em;
+display: flex;
+padding: 20px 20px;
+margin-left: 80px;
+margin-right: 80px;
 }
+.AREAONE{
+margin-left: 40px;
+width: 250px;
+height: 380px;
+flex-shrink: 0;
 
+border-radius: 26.617px;
+background: #FFF;
+box-shadow: 0px 34.069px 36.199px 0px rgba(0, 0, 0, 0.13);
+}
+.AREAONE h2{
+position: relative;
+left: 1.5em;
+color: #000;
+font-family: DM Sans;
+font-size: 19px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.642px;
+text-transform: capitalize;
+}
+.AREAONE p {
+position: relative;
+top: 20px;
+left: 1.5em;
+color: #818181;
+font-family: DM Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.642px;
+text-transform: capitalize;
+}
+.Price p {
+position: relative;
+top: 20px;
+left: 1.3em;
+color: #F4511E;
+font-family: DM Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.642px;
+text-transform: capitalize;
+}
