@@ -134,3 +134,48 @@ border: 1px solid #E6E6E6;
 background: var(--primary-color, #23A6F0);
 }
 
+/* FIRST MAIN CONTENT  */
+main{
+    padding: 25px 20px;
+}
+main h1{
+margin-left: 55px;
+color: var(--text-gray-900, #18191F);
+font-feature-settings: 'salt' on, 'liga' off;
+font-family: Inter;
+font-size: 26px;
+font-style: normal;
+font-weight: 800;
+line-height: 64px; /* 177.778% */
+text-transform: capitalize;
+}
+.Living-cost-area{
+    position: relative;
+    left: 35em;
+    bottom: 30em;
+}
+.Cost1{
+    display: flex;
+    margin-top: -40px;
+}
+.Cost-inner{
+    padding: 25px;
+}   
+.Thesvg1 svg{
+    position: absolute;
+    bottom: 10em;
+    left: 3.7em;
+    z-index: 3;
+}
+.Thesvg2 svg{
+    position: absolute;
+    bottom: 18em;
+    left: 13.9em;
+    z-index: 3;
+}
+.Thesvg3 svg{
+    position: absolute;
+    bottom: 18em;
+    left: 24.5em;
+    z-index: 3;
+}
