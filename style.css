@@ -241,6 +241,7 @@ text-transform: capitalize;
     display: flex;
 }
 .Area1 button{
+cursor: pointer;
 position: relative;
 left: 65em;
 margin-top: 7px;
@@ -281,6 +282,7 @@ margin-left: 80px;
 margin-right: 80px;
 }
 .AREAONE{
+cursor: pointer;
 margin-left: 40px;
 width: 250px;
 height: 380px;
@@ -391,4 +393,115 @@ z-index: 3;
    bottom: 37px;
 }
 
-/* WILL COME BACKK AND DO THE LINE  */
+.pagenationArea{
+    cursor: pointer;
+    margin: 50px;
+    left: 36.4em;
+    position: relative;
+    display: inline-flex;
+    /* padding: 20px;
+    width: 200px;
+    height: 50px; */
+    justify-content: center;
+    height: 50px;
+    width: 100px;
+}
+.pageF{
+display: flex;
+padding: 20px;
+justify-content: center;
+align-items: center;
+border: 1px solid var(--muted-color, #BDBDBD);
+background: #F3F3F3;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+}
+.pageF h5{
+color: var(--muted-color, #BDBDBD);
+text-align: center;
+/* h5 */
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 150% */
+letter-spacing: 0.1px;
+}
+.page1{
+display: flex;
+padding: 20px 20px;
+justify-content: center;
+align-items: center;
+border: 1px solid #E9E9E9;
+background: #FFF;
+}
+.page1 h5{
+color: #F4511E;
+text-align: center;
+/* h5 */
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 150% */
+letter-spacing: 0.1px;
+}
+.page2{
+display: flex;
+padding: 20px 20px;
+justify-content: center;
+align-items: center;
+border: 1px solid #E9E9E9;
+background: #F4511E;
+}
+.page2 h5{
+color: var(--light-text-color, #FFF);
+text-align: center;
+/* h5 */
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 150% */
+letter-spacing: 0.1px;
+}
+.page3{
+display: flex;
+padding: 20px 20px;
+justify-content: center;
+align-items: center;
+border: 1px solid #E9E9E9;
+background: #FFF;
+}
+.page3 h5{
+color: #F4511E;
+text-align: center;
+/* h5 */
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 150% */
+letter-spacing: 0.1px;
+}
+.pageN{
+display: flex;
+padding: 20px;
+justify-content: center;
+align-items: center;
+border: 1px solid #E8E8E8;
+background: #FFF;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+.pageN h5{
+color: #F4511E;
+text-align: center;
+/* h5 */
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 150% */
+letter-spacing: 0.1px;
+}
