@@ -505,3 +505,27 @@ font-weight: 700;
 line-height: 24px; /* 150% */
 letter-spacing: 0.1px;
 }
+
+/* SEARCH ROOM SECTION  */
+.Search-room-section{
+margin-top: 70px;
+padding: 20px 20px;
+margin-left: 80px;
+margin-right: 80px;
+/* display: flex; */
+}
+.pictures{
+position: relative;
+left: 80px;
+}
+.flex-pic{
+    display: flex;
+    margin-bottom: 20px;
+}
+.pic1 img , .pic2 img , .pic3 img , .pic4 img{
+border-radius: 20px;
+margin-left: 20px;
+}
+.pic2 img {
+    margin-top: 63px;
+}
