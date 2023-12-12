@@ -329,19 +329,36 @@ letter-spacing: -0.642px;
 text-transform: capitalize;
 }
 .Area-footer{
+    position: relative;
+    right: 23px;
+    margin-top: 15px;
     display: flex;
     text-align: center;
     align-items: center;
 }
 .AF1{
-    padding-left: 5px;
-    padding: 10px;
-    letter-spacing: -0.455px;
+    /* padding-left: 5px; */
+    /* padding: 10px; */
+    /* letter-spacing: -0.455px; */
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-.AF1 p{
-position: relative;
-left: 20px;
+.AF1 img{
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.AF1 > p{
+/* position: relative;
+left: 20px; */
 display: flex;
+flex-direction: row;
 padding: 10px;
 color: #000;
 font-family: DM Sans;
@@ -350,4 +367,28 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 letter-spacing: -0.455px;
+align-items: center;
 }
+.Area-footer-line{
+    position: absolute;
+    z-index: 3;
+}
+.Area-footer-line{
+z-index: 3;
+}
+.Line1{
+   position: relative;
+   top: 25px;
+}
+.Line2{
+   position: relative;
+   left: 10.1em;
+   top: 20px;
+}
+.Line3{
+   position: relative;
+   left: 4.8em;
+   bottom: 37px;
+}
+
+/* WILL COME BACKK AND DO THE LINE  */
