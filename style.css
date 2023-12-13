@@ -522,10 +522,95 @@ left: 80px;
     display: flex;
     margin-bottom: 20px;
 }
+.flex-pic p{
+color: #FFF;
+text-align: center;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: 15px; /* 83.333% */
+}
+.pic1 p{
+    color: #FFF;
+    position: absolute;
+    left: 7em;
+    top: 1em;
+}
+.pic2 p{
+    color: #FFF;
+    position: absolute;
+    left: 24em;
+    top: 5em;
+}
+.pic3 p{
+    color: #FFF;
+    position: absolute;
+    left: 6em;
+    top: 25em;
+}
+/* MAKE THIS TEXT ON TTHE PRICTURE APPEAR  */
+.pic4 p{
+    z-index: 5;
+    color: #FFF;
+    position: absolute;
+    left: 25em;
+    top: 1em;
+}
 .pic1 img , .pic2 img , .pic3 img , .pic4 img{
 border-radius: 20px;
 margin-left: 20px;
 }
 .pic2 img {
     margin-top: 63px;
+}
+
+.Search-right {
+/* position: absolute; */
+display: inline-flex;
+padding: 0px 40px;
+flex-direction: column;
+align-items: flex-start;
+gap: 30px;
+}
+.Search-right h3{
+color: var(--text-gray-900, #18191F);
+font-feature-settings: 'salt' on, 'liga' off;
+/* Heading / H3 */
+font-family: Inter;
+font-size: 30px;
+font-style: normal;
+font-weight: 800;
+line-height: 30px; /* 135% */
+}
+.Search-right p{
+color: var(--text-gray-900, #18191F);
+font-feature-settings: 'salt' on, 'liga' off;
+/* Lead / Lead 1 */
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 29px; /* 177.778% */
+}
+.Search-right button{
+border: none;
+display: flex;
+width: 150px;
+height: 43px;
+padding: 22px 28px 21px 30px;
+justify-content: center;
+align-items: center;
+border-radius: 13px;
+background: #F4511E;
+
+color: var(--default-white, #FFF);
+text-align: center;
+font-feature-settings: 'salt' on, 'clig' off, 'liga' off;
+font-family: Inter;
+font-size: 13px;
+font-style: normal;
+font-weight: 600;
+line-height: 20px; /* 111.111% */
 }
