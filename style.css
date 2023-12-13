@@ -4,13 +4,13 @@
     box-sizing: border-box;
 }
 
-body{
-    /* background-color: black; */
-}
+/* body{
+    /* background-color: black;
+} */
 
-header{
+/* header{
    
-}
+} */ */
 
 /* NAVIGATION AREA  */
 .Nav-background{
@@ -43,9 +43,24 @@ nav li a {
     margin-right: 12em;
 }
 .Nav-background{
-    position: relative;
-    z-index: -10;
-    bottom: 5em;
+position: relative;
+z-index: -10;
+bottom: 5em;
+width: 200px; 
+height: 200px; 
+overflow: hidden; 
+}
+.Nav-background{
+position: relative;
+z-index: -10;
+bottom: 5em;
+width: 200px; 
+height: 200px; 
+overflow: hidden; 
+
+width: 100%; /* Make the image fill the container */
+  height: 100%; /* Make the image fill the container */
+  object-fit: cover; /* Crop the image to cover the container while maintaining aspect ratio */
 }
 .Nav-line{
 margin-left: auto;
@@ -63,13 +78,14 @@ background: #FFF;
     position: absolute;
 }
 .Hero-content h1{
+    position: relative;
+    top: 1em;
+    left: 4.4em;
     width: 584px;
-    margin-left: 5em;
-    margin-top: 4em;
     text-align: left;
     color: #FFF;
     font-family: Inter;
-    font-size: 42px;
+    font-size: 47px;
     font-style: normal;
     font-weight: 700;
     line-height: 55px; /* 134.615% */
@@ -78,15 +94,16 @@ background: #FFF;
 }
 .Nav-map{
     position: absolute;
-    left: 52em;
+    left: 52.5em;
+    top: -3em;
 }
 .Hero-option{
 justify-content: center;
 align-items: center;
 display: flex;
-margin-left: 20px;
+margin-left: 18px;
 text-align: center;
-width: 408px;
+width: 378px;
 height: 58px;
 flex-shrink: 0;
 border-radius: 10px;
@@ -139,6 +156,7 @@ background: var(--primary-color, #23A6F0);
 
 /* FIRST MAIN CONTENT  */
 main{
+    margin-top: -3em;
     padding: 20px 20px;
     margin-left: 80px;
     margin-right: 80px;
@@ -167,7 +185,7 @@ main  img{
 .Living-cost-area{
     padding: 30px;
     position: absolute;
-    top: 150%;
+    top: 120%;
     left: 40%;
 }
 .cost-text{
@@ -275,13 +293,14 @@ text-transform: capitalize;
 }
 .Area2{
 position: relative;
-left: 8em;
+left:   8.5em;
 display: flex;
 padding: 20px 20px;
 margin-left: 80px;
 margin-right: 80px;
 }
 .AREAONE{
+margin-top: -3em;
 cursor: pointer;
 margin-left: 40px;
 width: 250px;
@@ -396,7 +415,7 @@ z-index: 3;
 .pagenationArea{
     cursor: pointer;
     margin: 50px;
-    left: 36.4em;
+    left: 37em;
     position: relative;
     display: inline-flex;
     /* padding: 20px;
@@ -408,7 +427,7 @@ z-index: 3;
 }
 .pageF{
 display: flex;
-padding: 20px;
+padding: 10px;
 justify-content: center;
 align-items: center;
 border: 1px solid var(--muted-color, #BDBDBD);
@@ -429,7 +448,7 @@ letter-spacing: 0.1px;
 }
 .page1{
 display: flex;
-padding: 20px 20px;
+padding: 10px 10px;
 justify-content: center;
 align-items: center;
 border: 1px solid #E9E9E9;
@@ -448,7 +467,7 @@ letter-spacing: 0.1px;
 }
 .page2{
 display: flex;
-padding: 20px 20px;
+padding: 10px 10px;
 justify-content: center;
 align-items: center;
 border: 1px solid #E9E9E9;
@@ -467,7 +486,7 @@ letter-spacing: 0.1px;
 }
 .page3{
 display: flex;
-padding: 20px 20px;
+padding: 10px 10px;
 justify-content: center;
 align-items: center;
 border: 1px solid #E9E9E9;
@@ -486,7 +505,7 @@ letter-spacing: 0.1px;
 }
 .pageN{
 display: flex;
-padding: 20px;
+padding: 10px;
 justify-content: center;
 align-items: center;
 border: 1px solid #E8E8E8;
