@@ -508,7 +508,7 @@ letter-spacing: 0.1px;
 
 /* SEARCH ROOM SECTION  */
 .Search-room-section{
-margin-top: 70px;
+margin-top: 40px;
 padding: 20px 20px;
 margin-left: 80px;
 margin-right: 80px;
@@ -523,6 +523,9 @@ left: 80px;
     margin-bottom: 20px;
 }
 .flex-pic p{
+position: absolute;
+left: 25em;
+top: 25em;
 color: #FFF;
 text-align: center;
 font-feature-settings: 'clig' off, 'liga' off;
@@ -551,13 +554,13 @@ line-height: 15px; /* 83.333% */
     top: 25em;
 }
 /* MAKE THIS TEXT ON TTHE PRICTURE APPEAR  */
-.pic4 p{
+/* .pic4 p{
     z-index: 5;
     color: #FFF;
     position: absolute;
     left: 25em;
     top: 1em;
-}
+} */
 .pic1 img , .pic2 img , .pic3 img , .pic4 img{
 border-radius: 20px;
 margin-left: 20px;
@@ -567,7 +570,9 @@ margin-left: 20px;
 }
 
 .Search-right {
-/* position: absolute; */
+position: relative;
+left: 45em;
+bottom: 35em;
 display: inline-flex;
 padding: 0px 40px;
 flex-direction: column;
@@ -579,10 +584,10 @@ color: var(--text-gray-900, #18191F);
 font-feature-settings: 'salt' on, 'liga' off;
 /* Heading / H3 */
 font-family: Inter;
-font-size: 30px;
+font-size: 40px;
 font-style: normal;
 font-weight: 800;
-line-height: 30px; /* 135% */
+line-height: 35px; /* 135% */
 }
 .Search-right p{
 color: var(--text-gray-900, #18191F);
