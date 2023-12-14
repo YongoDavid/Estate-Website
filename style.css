@@ -720,7 +720,7 @@ background: #F9F9F9;
 .inner-form3 label{
     position: relative;
     top: -0.2em;
-    left: 6.5em;
+    left: 6.7em;
 }
 .inner-form3 input{
 position: relative;
@@ -786,12 +786,12 @@ background: #F9F9F9;
     margin-top: 5px;
     position: relative;
     top: 1em;
-    left: 0.2em;
+    left: 0.1em;
 }
 .inner-form7 label{
     position: relative;
     top: -1em;
-    left: 0.5em;
+    left: 0.3em;
 }
 .inner-form7 input{
 position: relative;
@@ -813,12 +813,13 @@ background: #F9F9F9;
 }
 .inner-form8 label{
 position: relative;
+left: 0.3em;
+top: -0.1em;
 
 }
-/* FINISH UP ALIGNING THE DISCRIPTION  */
 .inner-form8 textarea{
 display: flex;
-width: 1004px;
+width: 1060px;
 height: 151px;
 padding: 13px 865px 110px 21px;
 align-items: center;
@@ -827,6 +828,84 @@ flex-shrink: 0;
 border-radius: 5px;
 border: 1px solid #E6E6E6;
 background: #F9F9F9;
-}
 
+color: var(--second-text-color, #737373);
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 200% */
+letter-spacing: 0.2px;
+}
 /* LOOK FOR A WAY TO GIVE THE ASTERICS A COLOR  */
+.form-Upload{
+margin-top: 20px;
+}
+.form-Upload h3{
+color: #000;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: capitalize;
+}
+.upload-Area{
+margin-top: 5px;
+width: 1060px;
+height: 102px;
+flex-shrink: 0;
+
+border-radius: 10px;
+border: 1px dashed #F4511E;
+background: rgba(244, 81, 30, 0.01);
+}
+.inner-upload{
+margin-top: 30px;
+text-align: center;
+}
+.inner-upload h4{
+color: #000;
+text-align: center;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.inner-upload span{
+color: #F4511E;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.inner-upload p{
+color: rgba(0, 0, 0, 0.50);
+text-align: center;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.Uploadbtn{
+text-align: center;
+margin-top: 20px;
+}
+.Uploadbtn button{
+width: 350px;
+height: 60px;
+border: none;
+border-radius: 9.08px;
+background: #F4511E;
+
+color: #FFF;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: 25.423px; /* 116.667% */
+letter-spacing: 0.182px;
+}
