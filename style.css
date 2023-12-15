@@ -909,3 +909,69 @@ font-weight: 500;
 line-height: 25.423px; /* 116.667% */
 letter-spacing: 0.182px;
 }
+
+.Comments-section{
+width: 1440px;
+height: 490px;
+flex-shrink: 0;
+margin-top: 60px;
+background: rgba(244, 81, 30, 0.07);
+}
+.The-comment{
+position: relative;
+top: 8.5em;
+left: 11em;
+color: var(--Text-Gray-900, #18191F);
+font-feature-settings: 'salt' on, 'liga' off;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 171.429% */
+}
+.The-comment img{
+position: absolute;
+top: -30px;
+left: -59px;
+}
+.comment-profile{
+display: flex;
+}
+.comment-profile h4{
+margin-top: 0.5em;
+color: #F4511E;
+font-feature-settings: 'salt' on, 'liga' off;
+/* Subtitle / Subtitle 1 */
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px; /* 155.556% */
+}
+.comment-profile p{
+margin-top: -0.3em;
+color: var(--Text-Gray-900, #18191F);
+font-feature-settings: 'salt' on, 'liga' off;
+/* Body / Body 1 */
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+}
+.comment-profile > img{
+position: relative;
+top: 0.1em;
+left: -0.1em;
+}
+.Comments-image > img{
+position: relative;
+top: -14em;
+left: 45em;
+}
+.comments-btn{
+position: absolute;
+left: 68em;
+z-index: 3;
+}
+COMMENT SECTION COMPLETE
