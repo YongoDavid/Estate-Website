@@ -300,7 +300,7 @@ margin-left: 80px;
 margin-right: 80px;
 }
 .AREAONE{
-margin-top: -3em;
+/* margin-top: -3em; */
 cursor: pointer;
 margin-left: 40px;
 width: 250px;
@@ -974,4 +974,102 @@ position: absolute;
 left: 68em;
 z-index: 3;
 }
-COMMENT SECTION COMPLETE
+
+/* THE MAIN FOOTER AREA PLACE  */
+
+.TopFotterLine{
+position: relative;
+margin-top: 10em;
+left: 7.5em;
+width: 1200px;
+height: 2px;
+flex-shrink: 0;
+background: #F4511E;
+}
+/* .FooterArea{
+display: flex;
+} */
+
+.FooterDetials{
+position: relative;
+left: 47em;
+color: var(--Dark, #0A142F);
+font-family: Assistant;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.Footeradd{
+display: flex;
+padding: 15px;
+}
+.FooterCall{
+padding: 15px;
+display: flex;
+/* padding: 20px; */
+}
+.Social-Media{
+align-items: center;
+display: flex;
+padding: 15px;
+}
+.Social-Icon{
+padding: 16px;
+}
+.Fcall1{
+padding-right: 11em;
+}
+.FooterLogo{
+position: relative;
+left: 7em;
+top: 3em;
+color: #000;
+font-family: Inter;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 70px; /* 134.615% */
+letter-spacing: -1px;
+text-transform: capitalize;
+}
+.FooterBottomLine{
+position: relative;
+left: 11em;
+margin-top: 1.5em;
+width: 1074px;
+height: 1px;
+flex-shrink: 0;
+opacity: 0.2;
+background: #7BB9FC;
+}
+.Footer-End{
+margin-top: 20px;
+margin-bottom: 50px;
+display: flex;
+align-items: center;
+}
+.Footer-End > p {
+position: relative;
+left: 11.9em;
+padding: 8px;
+color: var(--Dark, #0A142F);
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+}
+.Footer-copyright > p{
+position: relative;
+left: 32.5em;
+
+color: var(--Dark, #0A142F);
+text-align: right;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
