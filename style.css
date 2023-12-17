@@ -1063,7 +1063,7 @@ text-transform: uppercase;
 }
 .Footer-copyright > p{
 position: relative;
-left: 32.5em;
+left: 3em;
 
 color: var(--Dark, #0A142F);
 text-align: right;
