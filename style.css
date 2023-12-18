@@ -891,10 +891,12 @@ font-weight: 500;
 line-height: normal;
 }
 .Uploadbtn{
+cursor: pointer;
 text-align: center;
 margin-top: 20px;
 }
 .Uploadbtn button{
+cursor: pointer;
 width: 350px;
 height: 60px;
 border: none;
@@ -1063,7 +1065,7 @@ text-transform: uppercase;
 }
 .Footer-copyright > p{
 position: relative;
-left: 3em;
+left: 32em;
 
 color: var(--Dark, #0A142F);
 text-align: right;
