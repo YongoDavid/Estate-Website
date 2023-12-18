@@ -4,4 +4,7 @@
 
 // console.log('Cleaning design')
 
-console.log('things are on hold , i need to refresh and study')
+console.log('Running on the fakke port')
+
+console.log('Express installed')
+console.log('git ignore files created')
