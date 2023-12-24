@@ -4,3 +4,5 @@
 // const server = http.createServer((req, res {
 //     res.w
 // }))
+
+fetch('http:fgkkrkvflfv')
