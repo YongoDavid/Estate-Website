@@ -436,16 +436,11 @@ z-index: 3;
     text-align: center;
     list-style: none;
 }
-.pagenationArea li {
-    background-color: #ffffffBD;
-    padding: 20px;
-    display: inline-block;
-    margin: 0 10px;
-    cursor: pointer;
-}
-.pagenationArea .active{
-background-color: #b192ef;
-color: #fff;
+
+.pagenationArea a:hover{
+    /* background: #F4511E;s */
+    /* color: white; */
+    color: #000;
 }
 .pageF{
 display: flex;
@@ -457,15 +452,15 @@ background: #F3F3F3;
 border-top-left-radius: 5px;
 border-bottom-left-radius: 5px;
 }
-.pageF h5{
+.pageF a{
+text-decoration: none;
 color: var(--muted-color, #BDBDBD);
 text-align: center;
-
 font-family: Montserrat;
 font-size: 16px;
 font-style: normal;
 font-weight: 700;
-line-height: 24px; 150%
+line-height: 24px; 
 letter-spacing: 0.1px;
 }
 .page1{
@@ -476,10 +471,10 @@ align-items: center;
 border: 1px solid #E9E9E9;
 background: #FFF;
 }
-.page1 h5{
+.page1 a{
+text-decoration: none;
 color: #F4511E;
 text-align: center;
-/* h5 */
 font-family: Montserrat;
 font-size: 16px;
 font-style: normal;
@@ -493,10 +488,13 @@ padding: 10px 10px;
 justify-content: center;
 align-items: center;
 border: 1px solid #E9E9E9;
-background: #F4511E;
+background: #FFF;
+
 }
-.page2 h5{
-color: var(--light-text-color, #FFF);
+.page2 a{
+text-decoration: none;
+color: #F4511E;
+/* color: var(--light-text-color, #FFF); */
 text-align: center;
 /* h5 */
 font-family: Montserrat;
@@ -514,7 +512,8 @@ align-items: center;
 border: 1px solid #E9E9E9;
 background: #FFF;
 }
-.page3 h5{
+.page3 a{
+text-decoration: none;
 color: #F4511E;
 text-align: center;
 /* h5 */
@@ -535,7 +534,8 @@ background: #FFF;
 border-top-right-radius: 5px;
 border-bottom-right-radius: 5px;
 }
-.pageN h5{
+.pageN a{
+text-decoration: none;
 color: #F4511E;
 text-align: center;
 /* h5 */

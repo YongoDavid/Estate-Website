@@ -60,10 +60,34 @@
 //   showPage(1);
 // });
 
-const formContainer = document.createElement('div')
-const formlabel = document.createElement('label')
-formlabel.innerText = 'NAME:'
-const nameTag = document.createElement('Input')
-nameTag.setAttribute('type', 'text')
-nameTag.setAttribute('placeholder')
-formContainer 
+function processForm() {
+    let Name = document.getElementById('NameArea').value;
+    console.log(Name)
+    let Address = document.getElementById('AddressArea').value;
+    console.log(Address)
+    let UnitNumber = document.getElementById('UnitArea').value;
+    console.log(UnitNumber)
+    let City = document.getElementById('CityArea').value;
+    console.log(City)
+    let State = document.getElementById('StateArea').value;
+    console.log(State)
+    let Room = document.getElementById('RoomArea').value;
+    console.log(Room)
+    let Price = document.getElementById('PriceArea').value;
+    console.log(Price)
+    let Discription = document.getElementById('DiscriptionArea').value;
+    console.log(Discription)
+
+    displayData(Name, Address, UnitNumber, City, State, Room, Price, Discription)
+
+}
+
+function displayData(Name, Address, UnitNumber, City, State, Room, Price, Discription) {
+    alert('Loading informaion please wait')
+    console.log('Submitted')
+}
+
+processForm()
+displayData()
+
+// NOW THE FORM IS COLLECTING INFORMATIOON 
