@@ -180,26 +180,26 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     
 
-    //     let newPropertyHTML = `
-    //     <div class="AREAONE" id="property_new">
-    //         <img id="img_property_new" src="images/House6-image.png" alt="" width="250px">
-    //         <h2 id="title_property_new">${Name}, ${Address}</h2>
-    //         <p id="type_property_new">${Room}</p>
-    //         <div class="Price" id="price_property_new">
-    //             <p>${Price}/month</p>
-    //         </div>
-    //         <!-- Add other elements based on your structure -->
+        let newPropertyHTML = `
+        <div class="AREAONE" id="property_new">
+            <img id="img_property_new" src="images/House6-image.png" alt="" width="250px">
+            <h2 id="title_property_new">${Name}, ${Address}</h2>
+            <p id="type_property_new">${Room}</p>
+            <div class="Price" id="price_property_new">
+                <p>${Price}/month</p>
+            </div>
+            <!-- Add other elements based on your structure -->
 
-    //         <div id="footer-property6">
-    //                 <div id="fp6-line"><img src="images/Area-Footer-line1.png" alt="" width="250px"></div>
-    //                 <div id="flexp6-line">
-    //                     <div id="fp6-line2"><img src="images/Area-Footer-line2.png" alt="" height="53px">
-    //                     </div>
-    //                     <div id="fp6-line3"><img src="images/Area-Footer-line3.png" alt="" height="53px">
-    //                     </div>
-    //                 </div>
-    //     </div>
-    // `;
+            <div id="footer-property6">
+                    <div id="fp-line"><img src="images/Area-Footer-line1.png" alt="" width="250px"></div>
+                    <div id="flexp-line">
+                        <div id="fp-line2"><img src="images/Area-Footer-line2.png" alt="" height="53px">
+                        </div>
+                        <div id="fp-line3"><img src="images/Area-Footer-line3.png" alt="" height="53px">
+                        </div>
+                    </div>
+        </div>
+    `;
 
 
         // Save data to localStorage
