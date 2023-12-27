@@ -201,7 +201,10 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>
     `;
 
+        // NEED TO FIGURE OUT THIS THING BEING DYNAMIC BEFOORE THE END OOF TODAY 
+        // I MIGHT NEED TO USE THE OTHER PROJECT WE WORKED ON FIR THE ALL PRODUCTS EXAMPLE AND WORK MY WAY
 
+        
         // Save data to localStorage
         let savedata = {
             Name: Name,
