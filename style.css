@@ -912,12 +912,12 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 }
-.Uploadbtn{
+#Uploadbtn{
 cursor: pointer;
 text-align: center;
 margin-top: 20px;
 }
-.Uploadbtn button{
+#Uploadbtn button{
 cursor: pointer;
 width: 350px;
 height: 60px;
