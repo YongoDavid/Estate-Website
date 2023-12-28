@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Home Rentals</title>
+
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        .pagenationArea {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -238,7 +248,7 @@
 
         <div class="Area2">
 
-            <div class="AREAONE" id="property1">
+            <div class="AREAONE hidden" id="property1">
                 <img src="images/House1.png" alt="" width="250px" id="img-property1">
                 <h2 id="title-property1">2578 Folsom street, san <br> francisco, CA, 94110</h2>
                 <p id="type-property1">Private Room</p>
@@ -272,7 +282,7 @@
 
 
 
-            <div class="AREAONE" id="property2">
+            <div class="AREAONE hidden" id="property2">
                 <img src="images/House2.png" alt="" width="250px" id="img-property2">
                 <h2 id="title-property2">2578 Folsom street, san <br> francisco, CA, 94110</h2>
                 <p id="type-property2">Private Room</p>
@@ -306,7 +316,7 @@
 
 
 
-            <div class="AREAONE" id="property3">
+            <div class="AREAONE hidden" id="property3">
                 <img src="images/House3.png" alt="" width="250px" id="img-property3">
                 <h2 id="title-property3">2578 Folsom street, san <br> francisco, CA, 94110</h2>
                 <p id="type-property3">Private Room</p>
@@ -342,7 +352,7 @@
         <div class="Area2">
 
 
-            <div class="AREAONE" id="property4">
+            <div class="AREAONE hidden" id="property4">
                 <img src="images/House4.png" alt="" width="250px" id="img-property4">
                 <h2 id="title-property4">2578 Folsom street, san <br> francisco, CA, 94110</h2>
                 <p id="type-property4">Private Room</p>
@@ -375,7 +385,7 @@
 
 
 
-            <div class="AREAONE" id="property5">
+            <div class="AREAONE hidden" id="property5">
                 <img src="images/House5.png" alt="" width="250px" id="img-property5">
                 <h2 id="title-property5">2578 Folsom street, san <br> francisco, CA, 94110</h2>
                 <p id="type-property5">Private Room</p>
@@ -408,7 +418,7 @@
 
 
 
-            <div class="AREAONE" id="property6">
+            <div class="AREAONE hidden" id="property6">
                 <img src="images/House6.png" alt="" width="250px" id="img-property6">
                 <h2 id="title-property6">2578 Folsom street, san <br> francisco, CA, 94110</h2>
                 <p id="type-property6">Private Room</p>
@@ -442,19 +452,19 @@
 
         <div class="pagenationArea">
             <div class="pageF">
-                <a href="">First</a>
+                <button type="button" onclick="changePage('pre')">Back</button>
             </div>
             <div class="page1">
-                <a href="">1</a>
+                <button type="button" onclick="changePage(1)">1</button>
             </div>
             <div class="page2">
-                <a href="">2</a>
+                <button type="button" onclick="changePage(2)">2</button>
             </div>
             <div class="page3">
-                <a href="">3</a>
+                <button type="button" onclick="changePage(3)">3</button>
             </div>
             <div class="pageN">
-                <a href="">Next</a>
+                <button type="button" onclick="changePage('next')">Next</button>
             </div>
 
             <!-- <li class="active">1</li>
@@ -737,6 +747,38 @@
 
 
     <script src="estate.js"></script>
+
+    <script>
+
+        let currentPage = 1;
+
+        function changePage(page) {
+            // Calculate the new page
+            if (page === 'prev' && currentPage > 1) {
+                currentPage--;
+            } else if (page === 'next' && currentPage < 3) { // Assuming you have 3 pages, modify accordingly
+                currentPage++;
+            } else if (typeof page === 'number' && page >= 1 && page <= 3) { // Adjust the range based on the total number of pages
+                currentPage = page;
+            }
+            // Update visibility based on the current page
+            updateVisibility();
+        }
+
+        function updateVisibility() {
+            const properties = document.querySelectorAll('.AREAONE');
+            properties.forEach((property, index) => {
+                if (index + 1 === currentPage) {
+                    property.classList.remove('hidden');
+                } else {
+                    property.classList.add('hidden');
+                }
+            });
+        }
+
+        // Initial visibility setup
+        updateVisibility();
+    </script>
 </body>
 
 </html>
