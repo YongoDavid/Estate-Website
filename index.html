@@ -452,7 +452,7 @@
 
         <div class="pagenationArea">
             <div class="pageF">
-                <button type="button" onclick="changePage('pre')">Back</button>
+                <button type="button" onclick="changePage('Back')">Back</button>
             </div>
             <div class="page1">
                 <button type="button" onclick="changePage(1)">1</button>
@@ -754,12 +754,16 @@
 
         function changePage(page) {
             // Calculate the new page
-            if (page === 'prev' && currentPage > 1) {
+            if (page === 'Back' && currentPage > 1) {
                 currentPage--;
             } else if (page === 'next' && currentPage < 3) { // Assuming you have 3 pages, modify accordingly
                 currentPage++;
             } else if (typeof page === 'number' && page >= 1 && page <= 3) { // Adjust the range based on the total number of pages
                 currentPage = page;
+            } else if (page === 'next' && currentPage >= 3) {
+                currentPage--;
+            } else if (page === 'Back' && currentPagec < 3) {
+                currentPage--;
             }
             // Update visibility based on the current page
             updateVisibility();
