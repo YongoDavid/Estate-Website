@@ -1,8 +1,7 @@
-// TRYING TO SCREATE A SERVER 
+let properties = newProperties 
 
-// const http = require('http')
-// const server = http.createServer((req, res {
-//     res.w
-// }))
-
-fetch('http:fgkkrkvflfv')
+const formName = document.getElementById('NameArea').value
+const formAddress = document.getElementById('AddressArea').value
+const formRoom = document.getElementById('RoomArea').value
+const formPrice = document.getElementById('PriceArea').value
+const formDesc = document.getElementById('DescriptionArea').value
