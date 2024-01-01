@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     
         // Save data to localStorage
-        let savedata = {
+        const savedata = {
             Name: Name,
             Address: Address,
             UnitNumber: UnitNumber,
@@ -35,14 +35,15 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log('savedata', savedata)
         
         // check if there is data 
-        if (getData) {
-            let savedata = JSON.parse(getData)
-            console.log(savedata)
+        // I DONT THINK I NEED TO CECK IF THERE IS DATA 
+        // if (getData) {
+        //     let savedata = JSON.parse(getData)
+        //     console.log(savedata)
 
-            updatePropertyList(savedata)
-        } else {
-            console.log('No data found')
-        }
+        //     updatePropertyList(savedata)
+        // } else {
+        //     console.log('No data found')
+        // }
     };
     processForm()
     // Attach the processForm function to the form submission
