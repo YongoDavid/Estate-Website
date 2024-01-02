@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Now you have the list of properties loaded from localStorage in the 'properties' variable
     // You can use this list to display existing properties on your page, if needed.
 });
-let form = document.getElementById('Uploadbtn'); // Replace 'propertyForm' with the actual ID of your form
+let form = document.getElementById('propertyForm'); // Replace 'propertyForm' with the actual ID of your form
 form.addEventListener('submit', function (event) {
     // Prevent the default form submission behavior
     event.preventDefault();
@@ -73,6 +73,21 @@ function updatePropertyList() {
         propertyListContainer.appendChild(propertyElement);
     });
 }
+
+// Example property data
+let propertyData = {
+    imageSrc: 'path/to/image.jpg',
+    Price: 'Price',
+    // title: 'Property Title',
+    Room: 'Property Type',
+    price: '$1,000,000',
+    // ... add other properties as needed
+};
+
+// Call the function with the sample data
+createPropertyElement(propertyData);
+
+
 function createPropertyElement(propertyData) {
     // Create the main container div
     let propertyElement = document.createElement('div');
@@ -80,7 +95,7 @@ function createPropertyElement(propertyData) {
 
     // Create and style the image element
     let imgElement = document.createElement('img');
-    imgElement.src = propertyData.imageSrc;
+    // imgElement.src = propertyData.imageSrc;
     imgElement.alt = '';
     imgElement.width = '250px';
     imgElement.classList.add('img-property');
@@ -88,7 +103,7 @@ function createPropertyElement(propertyData) {
 
     // Create and style the title element
     let titleElement = document.createElement('h2');
-    titleElement.textContent = propertyData.title;
+    titleElement.textContent = propertyData.Room;
     titleElement.classList.add('title-property');
     propertyElement.appendChild(titleElement);
 
@@ -100,7 +115,7 @@ function createPropertyElement(propertyData) {
 
     // Create and style the price element
     let priceElement = document.createElement('div');
-    priceElement.classList.add('Price');
+    priceElement.classList.add('Price-property');
     let priceParagraph = document.createElement('p');
     priceParagraph.textContent = propertyData.price;
     priceElement.appendChild(priceParagraph);
@@ -125,17 +140,7 @@ function createPropertyElement(propertyData) {
     propertyListContainer.appendChild(propertyElement);
 }
 createPropertyElement()
-// Example property data
-let samplePropertyData = {
-    imageSrc: 'path/to/image.jpg',
-    title: 'Property Title',
-    type: 'Property Type',
-    price: '$1,000,000',
-    // ... add other properties as needed
-};
 
-// Call the function with the sample data
-createPropertyElement(samplePropertyData);
 
 
 
