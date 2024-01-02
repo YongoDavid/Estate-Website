@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
     //     // }
     // };
     // Attach the processForm function to the form submission
-let form = document.getElementById('propertyForm'); // Replace 'propertyForm' with the actual ID of your form
+let form = document.getElementById(''); // Replace 'propertyForm' with the actual ID of your form
 form.addEventListener('submit', function (event) {
     // Prevent the default form submission behavior
     event.preventDefault();

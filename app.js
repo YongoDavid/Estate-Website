@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log('Property added successfully!');
     };
 
+    processForm()
     // Now you have the list of properties loaded from localStorage in the 'properties' variable
     // You can use this list to display existing properties on your page, if needed.
 });
@@ -55,7 +56,7 @@ function updatePropertyList() {
 
         // Create and append elements for property details
         let theAddress = document.createElement('h2');
-        theAddress.textContent = property.Address; // Assuming Address is a property of your data
+        theAddress.textContent =   `Address: ${property.Address}`; // Assuming Address is a property of your data
         // ... create and append other elements
 
         let roomElement = document.createElement('p');
@@ -73,19 +74,85 @@ function updatePropertyList() {
         propertyListContainer.appendChild(propertyElement);
     });
 }
-
+// updatePropertyList()
 // Example property data
+// let propertyData = {
+//     imageSrc: 'path/to/image.jpg',
+//     Address: 'title-property',
+//     Room: 'type-property',
+//     price: 'Price-property',
+//     // ... add other properties as needed
+// };
+
+// // Call the function with the sample data
+// createPropertyElement(propertyData);
+
+
+// function createPropertyElement(propertyData) {
+//     // Create the main container div
+//     let propertyElement = document.createElement('div');
+//     propertyElement.classList.add('AREAONE');
+
+//     // Create and style the image element
+//     let imgElement = document.createElement('img');
+//     // imgElement.src = propertyData.imageSrc;
+//     imgElement.alt = '';
+//     imgElement.width = '250px';
+//     imgElement.classList.add('img-property');
+//     propertyElement.appendChild(imgElement);
+
+//     // Create and style the title element
+//     let titleElement = document.createElement('h2');
+//     titleElement.textContent = propertyData.Address;
+//     titleElement.classList.add('title-property');
+//     propertyElement.appendChild(titleElement);
+
+//     // Create and style the type element
+//     let typeElement = document.createElement('p');
+//     typeElement.textContent = propertyData.type;
+//     typeElement.classList.add('type-property');
+//     propertyElement.appendChild(typeElement);
+
+//     // Create and style the price element
+//     let priceElement = document.createElement('div');
+//     priceElement.classList.add('Price-property');
+//     let priceParagraph = document.createElement('p');
+//     priceParagraph.textContent = propertyData.price;
+//     priceElement.appendChild(priceParagraph);
+//     propertyElement.appendChild(priceElement);
+
+//     // Create and style the footer area
+//     let footerArea = document.createElement('div');
+//     footerArea.classList.add('Area-footer-line');
+//     // footerArea.setAttribute('position', 'absolute')
+//     // footerArea.setAttribute('z-index','1')
+//     // ... create and style other footer elements
+//     propertyElement.appendChild(footerArea);
+
+//     // Create and style the footer content
+//     let footerContent = document.createElement('div');
+//     footerContent.classList.add('Area-footer');
+//     // ... create and style other footer content elements
+//     propertyElement.appendChild(footerContent);
+
+//     // Add the property element to the document
+//     let propertyListContainer = document.getElementById('propertyListContainer');
+//     propertyListContainer.appendChild(propertyElement);
+// }
+// createPropertyElement()
+
+// Trying to debug some errors that is showing on my cdt 
+// MAKE SURE TO COME BACKK AND CHECK OUT WHY THE FORM ISS NOT SUBMITTING 
+
 let propertyData = {
-    imageSrc: 'path/to/image.jpg',
-    Price: 'Price',
-    // title: 'Property Title',
-    Room: 'Property Type',
-    price: '$1,000,000',
+    // imageSrc: 'path/to/ima',
+    Address: 'title-property', // Uncomment this line
+    type: 'type-property',
+    price: 'Price-property',
     // ... add other properties as needed
 };
 
 // Call the function with the sample data
-createPropertyElement(propertyData);
 
 
 function createPropertyElement(propertyData) {
@@ -94,16 +161,16 @@ function createPropertyElement(propertyData) {
     propertyElement.classList.add('AREAONE');
 
     // Create and style the image element
-    let imgElement = document.createElement('img');
+    // let imgElement = document.createElement('img');
     // imgElement.src = propertyData.imageSrc;
-    imgElement.alt = '';
-    imgElement.width = '250px';
-    imgElement.classList.add('img-property');
-    propertyElement.appendChild(imgElement);
+    // imgElement.alt = '';
+    // imgElement.width = '250px';
+    // imgElement.classList.add('img-property');
+    // propertyElement.appendChild(imgElement);
 
     // Create and style the title element
     let titleElement = document.createElement('h2');
-    titleElement.textContent = propertyData.Room;
+    titleElement.textContent = propertyData.Address;
     titleElement.classList.add('title-property');
     propertyElement.appendChild(titleElement);
 
@@ -124,8 +191,6 @@ function createPropertyElement(propertyData) {
     // Create and style the footer area
     let footerArea = document.createElement('div');
     footerArea.classList.add('Area-footer-line');
-    // footerArea.setAttribute('position', 'absolute')
-    // footerArea.setAttribute('z-index','1')
     // ... create and style other footer elements
     propertyElement.appendChild(footerArea);
 
@@ -139,8 +204,5 @@ function createPropertyElement(propertyData) {
     let propertyListContainer = document.getElementById('propertyListContainer');
     propertyListContainer.appendChild(propertyElement);
 }
-createPropertyElement()
 
-
-
-
+createPropertyElement(propertyData);
