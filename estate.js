@@ -1,35 +1,3 @@
-// document.addEventListener('DOMContentLoaded', function () {
-//     function processForm() {
-//         let Name = document.getElementById('NameArea').value;
-//         let Address = document.getElementById('AddressArea').value;
-//         let UnitNumber = document.getElementById('UnitArea').value;
-//         let City = document.getElementById('CityArea').value;
-//         let State = document.getElementById('StateArea').value;
-//         let Room = document.getElementById('RoomArea').value;
-//         let Price = document.getElementById('PriceArea').value;
-//         let Description = document.getElementById('DescriptionArea').value;
-
-//         // displayData(Name, Address, UnitNumber, City, State, Room, Price, Description); {
-//         //     console.log('Processing')
-//         // }
-    
-//         // Save data to localStorage
-//         const savedata = {
-//             Name: Name,
-//             Address: Address,
-//             UnitNumber: UnitNumber,
-//             City: City,
-//             State: State,
-//             Room: Room,
-//             Price: Price,
-//             Description: Description
-//         };
-//         savedata.push()
-
-//         localStorage.setItem('savedata', JSON.stringify(savedata));
-//     };
-
-
 document.addEventListener('DOMContentLoaded', function () {
     // Load existing data from localStorage
     let properties = JSON.parse(localStorage.getItem('properties')) || [];

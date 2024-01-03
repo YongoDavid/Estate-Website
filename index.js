@@ -96,7 +96,7 @@ const addProperty = (ev) => {
     };
 
     listOfProperties.push(property);
-    propertyForm[0].reset(); // Clear the form for next entries
+    getFormData[0].reset(); // Clear the form for next entries
 
     // Remove the unnecessary if-check block
 
