@@ -51,8 +51,6 @@
 // })
 
 
-
-
 function getFormData() {
     // Use value property to get the actual value of the input elements
     let Name = document.getElementById('NameArea').value;
@@ -80,27 +78,21 @@ function getFormData() {
 // This line is not needed, as it is unreachable due to the return statement above
 // const propertyInfo = getFormData();
 
-let listOfProperties = []; // Use let instead of reassigning to an HTML element
+const listOfProperties = []; // Use let instead of reassigning to an HTML element
 
-const addProperty = (ev) => {
-    ev.preventDefault(); // Correct the typo in 'preventDefault'
-
-    // Use getFormData to get the property information
-    let property = getFormData();
-
-    // Fix typos in property object keys ('Address' and 'Rooom')
-    property = {
+const  property = {
         Address: property.Address,
         Room: property.Room,
         Price: property.Price
     };
+listOfProperties.push(property);
+localStorage.setItem('addNewProperty', JSON.stringify(listOfProperties));
 
-    listOfProperties.push(property);
+
+const addProperty = (ev) => {
+    ev.preventDefault(); // Correct the typo in 'preventDefault'
+
     // getFormData[0].reset(); // Clear the form for next entries
-
-    // Remove the unnecessary if-check block
-
-    localStorage.setItem('addNewProperty', JSON.stringify(listOfProperties));
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -112,6 +104,12 @@ document.addEventListener('DOMContentLoaded', () => {
 // Create the container for new properties 
 
 function createPropertyElement(property) {
+
+     if (!property || typeof property !== 'object') {
+        console.error('Invalid property object:', property);
+        return;
+     }
+    
     // create the main container 
     let propertyElement = document.createElement('div')
     propertyElement.classList.add('AREAONE');
@@ -139,9 +137,9 @@ function createPropertyElement(property) {
     let priceElement = document.createElement('div');
     priceElement.classList.add('Price');
     let priceParagraph = document.createElement('p')
-    priceParagraph.textContent = property.price;
+    priceParagraph.textContent = property.Price;
     priceElement.appendChild(priceParagraph);
-    propertyElement.appendChild(propertyElement);
+    propertyElement.appendChild(priceElement);
 
     // Create and style the footer area
     let footerArea = document.createElement('div');
@@ -161,14 +159,33 @@ function createPropertyElement(property) {
     let propertyListContainer = document.getElementById('propertyListContainer');
     propertyListContainer.appendChild(propertyElement);
 }
-createPropertyElement()
+createPropertyElement(property)
 
 
-// function updatePropertyList(property) {
-//     const propertyListContainer = document.getElementById('propertyListContainer');
+function updatePropertyList() {
+    const propertyListContainer = document.getElementById('propertyListContainer');
 
-//     property.forEach(function (property, index) {
-//         // creat a container for each property 
-//         let propertyElement = document.createElement
-//     })
-// }
+    property.forEach(function (property, index) {
+        // creat a container for each property 
+        let propertyElement = document.createElement('div');
+        propertyElement.id = `property${index + 1}`;
+
+        // create and append elements for property details 
+        let theAddress = document.createElement('h2')
+        theAddress.textContent = `Address: ${property.Address}`;
+
+        let roomElement = document.createElement('p');
+        roomElement.textContent = `Room: ${property.Room}`;
+
+        let priceElement = document.createElement('div');
+        priceElement.textContent = `Price: ${property.Price}`;
+
+        propertyElement.appendChild(priceElement);
+        propertyElement.appendChild(roomElement);
+        propertyElement.appendChild(theAddress);
+        // ... append other elements to propertyElement
+
+        // Append the property container to the main container
+        propertyListContainer.appendChild(propertyElement);
+    });
+}
