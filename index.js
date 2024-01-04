@@ -96,7 +96,7 @@ const addProperty = (ev) => {
     };
 
     listOfProperties.push(property);
-    getFormData[0].reset(); // Clear the form for next entries
+    // getFormData[0].reset(); // Clear the form for next entries
 
     // Remove the unnecessary if-check block
 
@@ -107,3 +107,4 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('Uploadbtn').addEventListener('click', addProperty);
 });
 
+// WHEN I AM BACK I NEED TO FIGURE OUT HOW TO MAKE THIS PROPERTIES APPEAR ON THE LIST 
