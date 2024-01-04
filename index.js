@@ -108,3 +108,67 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // WHEN I AM BACK I NEED TO FIGURE OUT HOW TO MAKE THIS PROPERTIES APPEAR ON THE LIST 
+
+// Create the container for new properties 
+
+function createPropertyElement(property) {
+    // create the main container 
+    let propertyElement = document.createElement('div')
+    propertyElement.classList.add('AREAONE');
+
+    // create and style the image element
+    let imgElement = document.createElement('img');
+    imgElement.src = "images/House1.png"
+    imgElement.alt = '';
+    imgElement.width = '250px';
+    imgElement.classList.add('img-property1')
+    propertyElement.appendChild(imgElement)
+
+    // create and style the title element 
+    let titleElement = document.createElement('h2');
+    titleElement.textContent = property.Address;
+    titleElement.classList.add('title-property1');
+    propertyElement.appendChild(titleElement);
+
+    // create and style the type element 
+    let typeElement = document.createElement('p');
+    typeElement.textContent = property.Room;
+    typeElement.classList.add('type-property1')
+    propertyElement.appendChild(typeElement);
+
+    let priceElement = document.createElement('div');
+    priceElement.classList.add('Price');
+    let priceParagraph = document.createElement('p')
+    priceParagraph.textContent = property.price;
+    priceElement.appendChild(priceParagraph);
+    propertyElement.appendChild(propertyElement);
+
+    // Create and style the footer area
+    let footerArea = document.createElement('div');
+    footerArea.classList.add('Area-footer-line');
+    // footerArea.setAttribute('position', 'absolute')
+    // footerArea.setAttribute('z-index','1')
+    // ... create and style other footer elements
+    propertyElement.appendChild(footerArea);
+
+    // Create and style the footer content
+    let footerContent = document.createElement('div');
+    footerContent.classList.add('Area-footer');
+    // ... create and style other footer content elements
+    propertyElement.appendChild(footerContent);
+
+    // Add the property element to the document
+    let propertyListContainer = document.getElementById('propertyListContainer');
+    propertyListContainer.appendChild(propertyElement);
+}
+createPropertyElement()
+
+
+// function updatePropertyList(property) {
+//     const propertyListContainer = document.getElementById('propertyListContainer');
+
+//     property.forEach(function (property, index) {
+//         // creat a container for each property 
+//         let propertyElement = document.createElement
+//     })
+// }
