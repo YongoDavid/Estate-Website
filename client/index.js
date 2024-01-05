@@ -54,15 +54,23 @@
 function getFormData() {
     // Use value property to get the actual value of the input elements
     let Name = document.getElementById('NameArea').value;
+    console.log('name', Name)
     let Address = document.getElementById('AddressArea').value;
+    console.log('address',Address)
     let UnitNumber = document.getElementById('UnitArea').value;
+    console.log('unitnumber',UnitNumber)
     let City = document.getElementById('CityArea').value;
+    console.log('city',City)
     let State = document.getElementById('StateArea').value;
+    console.log('State',State)
     let Room = document.getElementById('RoomArea').value;
+    console.log('Room',Room)
     let Price = document.getElementById('PriceArea').value;
+    console.log('Price',Price)
     let Description = document.getElementById('DescriptionArea').value;
+    console.log('Description',Description)
 
-    // Return an object with properties and values
+    // Return an object with properties and values  
     return {
         Name,
         Address,
@@ -74,7 +82,6 @@ function getFormData() {
         Description
     };
 }
-
 // This line is not needed, as it is unreachable due to the return statement above
 // const propertyInfo = getFormData();
 

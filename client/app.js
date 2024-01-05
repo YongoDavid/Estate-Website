@@ -4,25 +4,34 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function processForm() {
         let Name = document.getElementById('NameArea').value;
+        console.log('Name:' ,Name)
         let Address = document.getElementById('AddressArea').value;
+        console.log('Address',Address)
         let UnitNumber = document.getElementById('UnitArea').value;
+        console.log('Unitnumber', UnitNumber)
         let City = document.getElementById('CityArea').value;
+        console.log('City',City)
         let State = document.getElementById('StateArea').value;
+        console.log('State', State)
         let Room = document.getElementById('RoomArea').value;
+        console.log('Room',Room)
         let Price = document.getElementById('PriceArea').value;
+        console.log('Price',Price)
         let Description = document.getElementById('DescriptionArea').value;
+        console.log('Description',Description)
+
 
         // Save data to localStorage
-        const property = {
-            Name: Name,
-            Address: Address,
-            UnitNumber: UnitNumber,
-            City: City,
-            State: State,
-            Room: Room,
-            Price: Price,
-            Description: Description
-        };
+        // const property = {
+        //     Name: Name,
+        //     Address: Address,
+        //     UnitNumber: UnitNumber,
+        //     City: City,
+        //     State: State,
+        //     Room: Room,
+        //     Price: Price,
+        //     Description: Description
+        // };
 
         // Add the new property to the list
         properties.push(property);
@@ -39,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // You can use this list to display existing properties on your page, if needed.
 });
 let form = document.getElementById('propertyForm'); // Replace 'propertyForm' with the actual ID of your form
-form.addEventListener('submit', function (event) {
+form.addEventListener('click', function (event) {
     // Prevent the default form submission behavior
     event.preventDefault();
 
