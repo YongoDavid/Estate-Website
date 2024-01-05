@@ -30,3 +30,6 @@ const server = http.createServer((req, res) => {
 server.listen(3000, 'localhost', () => {
     console.log(`listing on ${PORT}`)
 })
+
+
+// NEED TO LINK DATA GOTTEN FRM FORM TO SERVER 

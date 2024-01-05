@@ -31,5 +31,7 @@ function extractFormData() {
     // Optionally, you can reset the form after extracting the data
     document.getElementById("propertyForm").reset();
     
-    
+    // FROM HERE IS TO CREATE A BUTTON TO BE ABLE TO CLICK AND SAVE THE FORM DATA AND LINK IT TO THE SERVER 
+
+    // CHATGPT ALREADY HELPING ME WE STOPPED AT IT SHOWING ME HOW I WILL STORE THIS TO MYY SERVER 
 }
