@@ -1,3 +1,5 @@
+let properties = JSON.parse(localStorage.getItem('properties')) || [];
+
 function extractFormData() {
     // Get form elements by their ids
     let name = document.getElementById("NameArea").value;
@@ -11,8 +13,10 @@ function extractFormData() {
 
     // validate the form 
     if (!name || !address || !unit || !city || !state || !roomType || !price || !description) {
-        alert('Please fill all required feilds!')
+        alert('Please fill all required fields!');
+        return null; // Stop further processing if validation fails
     }
+
     // Create an object to store the extracted data
     let propertyData = {
         name: name,
@@ -21,17 +25,40 @@ function extractFormData() {
         city: city,
         state: state,
         roomType: roomType,
-        price: price,
+        price: price.toString(),
         description: description
     };
 
-    // You can now use the 'propertyData' object as needed (e.g., send it to the server, update UI, etc.)
-    console.log(propertyData);
-
     // Optionally, you can reset the form after extracting the data
-    document.getElementById("propertyForm").reset();
-    
-    // FROM HERE IS TO CREATE A BUTTON TO BE ABLE TO CLICK AND SAVE THE FORM DATA AND LINK IT TO THE SERVER 
+    // document.getElementById("propertyForm").reset();
 
-    // CHATGPT ALREADY HELPING ME WE STOPPED AT IT SHOWING ME HOW I WILL STORE THIS TO MYY SERVER 
+    return propertyData;
 }
+
+const submitform = document.getElementById('Uploadbtn');
+submitform.addEventListener('click', function (event) {
+    // prevent default submission behavior 
+    event.preventDefault();
+
+    let propertyData = extractFormData();
+    if (propertyData) {
+        // Transform data if needed
+        let transformedData = {
+            Address: propertyData.address,
+            Room: propertyData.roomType,
+            Price: propertyData.price
+        };
+
+        // Push new properties 
+        properties.push(transformedData);
+        localStorage.setItem('properties', JSON.stringify(properties));
+    }
+});
+
+
+// console.log('Data stored in local storage:', JSON.parse(localStorage.getItem('properties')));
+//         console.log(localStorage.getItem('properties'));
+//         console.log(localStorage.length);
+//         window.addEventListener('storage', function (e) {
+//             console.log('Storage event:', e);
+//         });
