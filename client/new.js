@@ -65,7 +65,7 @@ submitform.addEventListener('click', function (event) {
 
 // CREATING ELEMENTS FOR THE NEW PROPERTY 
 
-function createPropertyElement() {
+function createPropertyElement(propertyData) {
     let propertyElement = document.createElement('div')
     propertyElement.classList.add('AREAONE');
     propertyElement.innerHTML = `
@@ -111,13 +111,13 @@ function createPropertyElement() {
     let propertyList = document.getElementById('propertyListContainer'); // Update this with your actual property list container ID
     propertyList.appendChild(propertyElement);
 }
-
+createPropertyElement(propertyData)
 // Event listener for form submission 
 const submitButton = document.getElementById('Uploadbtn');
 submitButton.addEventListener('click', function handleFormSubmission(event) {
     event.preventDefault();
 
-    let propertyData = extractFormData;
+    let propertyData = extractFormData();
     if (propertyData) {
         // push new property data too loocal storage 
         properties.push(propertyData)
