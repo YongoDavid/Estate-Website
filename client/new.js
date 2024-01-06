@@ -62,3 +62,69 @@ submitform.addEventListener('click', function (event) {
 //         window.addEventListener('storage', function (e) {
 //             console.log('Storage event:', e);
 //         });
+
+// CREATING ELEMENTS FOR THE NEW PROPERTY 
+
+function createPropertyElement() {
+    let propertyElement = document.createElement('div')
+    propertyElement.classList.add('AREAONE');
+    propertyElement.innerHTML = `
+    <img src="images/House2.png" alt="" width="250px">
+        <h2>${propertyData.Address}</h2>
+        <p>${propertyData.Room}</p>
+        <div class="Price">
+            <p>${propertyData.Price}/month</p>
+        </div>
+
+
+        <!-- Additional property details -->
+        <div class="Area-footer-line" id="footer-property${properties.length + 1}">
+            <div class="Line1" id="fp${properties.length + 1}-line">
+                <img src="images/Area-Footer-line1.png" alt="" width="250px">
+            </div>
+            <div class="flexLine" id="flexp${properties.length + 1}-line">
+                <div class="Line2" id="fp${properties.length + 1}-line2">
+                    <img src="images/Area-Footer-line2.png" alt="" height="53px">
+                </div>
+                <div class="Line3" id="fp${properties.length + 1}-line3">
+                    <img src="images/Area-Footer-line3.png" alt="" height="53px">
+                </div>
+            </div>
+        </div>
+
+        <div class="Area-footer">
+            <div class="AF1" id="af${properties.length + 1}-END">
+                <p><img src="images/Bed.svg" alt="">${2}</p>
+            </div>
+            <div class="AF1" id="af${properties.length + 1}-END">
+                <p><img src="images/Shower.svg" alt="">${2}</p>
+            </div>
+            <div class="AF1" id="af${properties.length + 1}-END">
+                <p><img src="images/Size.svg" alt="">${2}</p>
+            </div>
+        </div>
+        <!-- End of additional property details -->
+    
+        `
+    
+    // Append the new property element to the list
+    let propertyList = document.getElementById('propertyListContainer'); // Update this with your actual property list container ID
+    propertyList.appendChild(propertyElement);
+}
+
+// Event listener for form submission 
+const submitButton = document.getElementById('Uploadbtn');
+submitButton.addEventListener('click', function handleFormSubmission(event) {
+    event.preventDefault();
+
+    let propertyData = extractFormData;
+    if (propertyData) {
+        // push new property data too loocal storage 
+        properties.push(propertyData)
+        localStorage.setItem('properties', JSON.stringify(properties));
+
+
+        // ADD NEW PROPERTY TO THE LIST 
+        createPropertyElement(propertyData)
+    }
+})
