@@ -66,14 +66,19 @@ submitform.addEventListener('click', function (event) {
 // CREATING ELEMENTS FOR THE NEW PROPERTY 
 
 function createPropertyElement(propertyData) {
+    let propertyTag = document.createElement('div')
+    propertyTag.classList.add('Area2')
     let propertyElement = document.createElement('div')
     propertyElement.classList.add('AREAONE');
     propertyElement.innerHTML = `
-    <img src="images/House2.png" alt="" width="250px">
-        <h2>${propertyData.Address}</h2>
-        <p>${propertyData.Room}</p>
-        <div class="Price">
-            <p>${propertyData.Price}/month</p>
+<div class="Area2">
+
+    <div class="AREAONE" id="propertyy1">
+        <img src="images/House3.png" alt="" width="250px">
+        <h2 id="title-property1">${propertyData.address}</h2>
+        <p id="type-property1">${propertyData.roomType}</p>
+        <div class="price" id="price-property1">
+            <p>$${propertyData.price}/month</p>
         </div>
 
 
@@ -103,15 +108,17 @@ function createPropertyElement(propertyData) {
                 <p><img src="images/Size.svg" alt="">${2}</p>
             </div>
         </div>
+    </div>s
+
+</div>
         <!-- End of additional property details -->
-    
-        `
-    
+    `
     // Append the new property element to the list
     let propertyList = document.getElementById('propertyListContainer'); // Update this with your actual property list container ID
     propertyList.appendChild(propertyElement);
+    propertyList.appendChild(propertyTag);
 }
-createPropertyElement(propertyData)
+// createPropertyElement(propertyData)
 // Event listener for form submission 
 const submitButton = document.getElementById('Uploadbtn');
 submitButton.addEventListener('click', function handleFormSubmission(event) {
