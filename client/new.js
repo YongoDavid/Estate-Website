@@ -67,11 +67,11 @@ submitform.addEventListener('click', function (event) {
 
 function createPropertyElement(propertyData) {
     let propertyListContainer = document.getElementsByClassName('Area2')
-    propertyListContainer.classList.add('Area2')
+    propertyListContainer.classList.add('Area2');
     let propertyElement = document.createElement('div')
     propertyElement.classList.add('AREAONE');
     propertyElement.innerHTML = `
-    
+
             <div class="Area2">
                 <img src="images/House3.png" alt="" width="250px">
                 <h2 id="title-property1" ${properties.length}>${propertyData.address}</h2>
