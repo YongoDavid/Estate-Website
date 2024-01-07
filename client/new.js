@@ -66,57 +66,56 @@ submitform.addEventListener('click', function (event) {
 // CREATING ELEMENTS FOR THE NEW PROPERTY 
 
 function createPropertyElement(propertyData) {
-    let propertyTag = document.createElement('div')
-    propertyTag.classList.add('Area2')
+    let propertyListContainer = document.getElementsByClassName('Area2')
+    propertyListContainer.classList.add('Area2')
     let propertyElement = document.createElement('div')
     propertyElement.classList.add('AREAONE');
     propertyElement.innerHTML = `
-<div class="Area2">
-
-    <div class="AREAONE" id="propertyy1">
-        <img src="images/House3.png" alt="" width="250px">
-        <h2 id="title-property1">${propertyData.address}</h2>
-        <p id="type-property1">${propertyData.roomType}</p>
-        <div class="price" id="price-property1">
-            <p>$${propertyData.price}/month</p>
-        </div>
-
-
-        <!-- Additional property details -->
-        <div class="Area-footer-line" id="footer-property${properties.length + 1}">
-            <div class="Line1" id="fp${properties.length + 1}-line">
-                <img src="images/Area-Footer-line1.png" alt="" width="250px">
-            </div>
-            <div class="flexLine" id="flexp${properties.length + 1}-line">
-                <div class="Line2" id="fp${properties.length + 1}-line2">
-                    <img src="images/Area-Footer-line2.png" alt="" height="53px">
+    
+            <div class="Area2">
+                <img src="images/House3.png" alt="" width="250px">
+                <h2 id="title-property1" ${properties.length}>${propertyData.address}</h2>
+                <p id="type-property1" ${properties.length}>${propertyData.roomType}</p>
+                <div class="price" id="price-property1" ${properties.length}>
+                    <p>$${propertyData.price}/month</p>
                 </div>
-                <div class="Line3" id="fp${properties.length + 1}-line3">
-                    <img src="images/Area-Footer-line3.png" alt="" height="53px">
+
+
+                <!-- Additional property details -->
+                <div class="Area-footer-line" id="footer-property${properties.length + 1}">
+                    <div class="Line1" id="fp${properties.length + 1}-line">
+                        <img src="images/Area-Footer-line1.png" alt="" width="250px">
+                    </div>
+                    <div class="flexLine" id="flexp${properties.length + 1}-line">
+                        <div class="Line2" id="fp${properties.length + 1}-line2">
+                            <img src="images/Area-Footer-line2.png" alt="" height="53px">
+                        </div>
+                        <div class="Line3" id="fp${properties.length + 1}-line3">
+                            <img src="images/Area-Footer-line3.png" alt="" height="53px">
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="Area-footer">
-            <div class="AF1" id="af${properties.length + 1}-END">
-                <p><img src="images/Bed.svg" alt="">${2}</p>
-            </div>
-            <div class="AF1" id="af${properties.length + 1}-END">
-                <p><img src="images/Shower.svg" alt="">${2}</p>
-            </div>
-            <div class="AF1" id="af${properties.length + 1}-END">
-                <p><img src="images/Size.svg" alt="">${2}</p>
-            </div>
-        </div>
-    </div>s
+                <div class="Area-footer">
+                    <div class="AF1" id="af${properties.length + 1}-END">
+                        <p><img src="images/Bed.svg" alt="">${2}</p>
+                    </div>
+                    <div class="AF1" id="af${properties.length + 1}-END">
+                        <p><img src="images/Shower.svg" alt="">${2}</p>
+                    </div>
+                    <div class="AF1" id="af${properties.length + 1}-END">
+                        <p><img src="images/Size.svg" alt="">${2}</p>
+                    </div>
+                </div>
 
-</div>
-        <!-- End of additional property details -->
-    `
+
+                <!-- End of additional property details -->
+            </div>
+        `
     // Append the new property element to the list
     let propertyList = document.getElementById('propertyListContainer'); // Update this with your actual property list container ID
     propertyList.appendChild(propertyElement);
-    propertyList.appendChild(propertyTag);
+    propertyList.appendChild(propertyListContainer);
 }
 // createPropertyElement(propertyData)
 // Event listener for form submission 
