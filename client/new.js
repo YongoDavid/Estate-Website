@@ -134,3 +134,5 @@ submitButton.addEventListener('click', function handleFormSubmission(event) {
         createPropertyElement(propertyData)
     }
 })
+
+// TRYING TO POOITION NEW PROERTY CONTAINER 
