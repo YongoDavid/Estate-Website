@@ -66,20 +66,19 @@ submitform.addEventListener('click', function (event) {
 // CREATING ELEMENTS FOR THE NEW PROPERTY 
 
 function createPropertyElement(propertyData) {
-    let propertyListContainer = document.getElementsByClassName('Area2')
+    let propertyListContainer = document.createElement('div')
     propertyListContainer.classList.add('Area2');
+
     let propertyElement = document.createElement('div')
     propertyElement.classList.add('AREAONE');
     propertyElement.innerHTML = `
-
-            <div class="Area2">
+            <div>
                 <img src="images/House3.png" alt="" width="250px">
                 <h2 id="title-property1" ${properties.length}>${propertyData.address}</h2>
                 <p id="type-property1" ${properties.length}>${propertyData.roomType}</p>
                 <div class="price" id="price-property1" ${properties.length}>
                     <p>$${propertyData.price}/month</p>
                 </div>
-
 
                 <!-- Additional property details -->
                 <div class="Area-footer-line" id="footer-property${properties.length + 1}">
@@ -108,9 +107,10 @@ function createPropertyElement(propertyData) {
                     </div>
                 </div>
 
-
-                <!-- End of additional property details -->
             </div>
+
+            <!-- End of additional property details -->
+
         `
     // Append the new property element to the list
     let propertyList = document.getElementById('propertyListContainer'); // Update this with your actual property list container ID
