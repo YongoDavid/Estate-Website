@@ -66,8 +66,8 @@ submitform.addEventListener('click', function (event) {
 // CREATING ELEMENTS FOR THE NEW PROPERTY 
 
 function createPropertyElement(propertyData) {
-    let propertyListContainer = document.createElement('div')
-    propertyListContainer.classList.add('Area2');
+    // let propertyContainer = document.createElement('div')
+    // propertyContainer.classList.add('Area2');
 
     let propertyElement = document.createElement('div')
     propertyElement.classList.add('AREAONE');
@@ -115,7 +115,13 @@ function createPropertyElement(propertyData) {
     // Append the new property element to the list
     let propertyList = document.getElementById('propertyListContainer'); // Update this with your actual property list container ID
     propertyList.appendChild(propertyElement);
-    propertyList.appendChild(propertyListContainer);
+    // let area2 = document.getElementsByClassName('Area2')
+    // propertyList.appendChild(area2)
+    // area2.appendChild(propertyContainer)
+
+    // TRYING TO APPENED THE CLASS AREA2 TO THE PROPERTYLIST 
+    
+
 }
 // createPropertyElement(propertyData)
 // Event listener for form submission 

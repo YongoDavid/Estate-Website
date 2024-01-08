@@ -298,7 +298,7 @@ text-transform: capitalize;
 /* display: grid;
 grid-template-columns: 300px 300px 300px ;
 column-gap: 20px; */
-
+flex-direction: row;
 position: relative;
 left:   8.5em;
 display: flex;
