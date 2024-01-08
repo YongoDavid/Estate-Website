@@ -811,6 +811,12 @@
         }
 
         function updateVisibility() {
+            // const propertiesContainer = document.querySelector('.properties-container');
+            // propertiesContainer.innerHTML = '';
+
+            // const startIndex = (currentPage - 1) * ELEMENTS_PER_PAGE;
+            // const endIndex = currentPage * ELEMENTS_PER_PAGE
+
             const properties = document.querySelectorAll('.AREAONE');
             properties.forEach((property, index) => {
                 const isElementVisible = index + 1 >= (currentPage - 1) * ELEMENTS_PER_PAGE + 1 && index + 1 <= currentPage * ELEMENTS_PER_PAGE;
@@ -821,6 +827,14 @@
                     property.classList.add('hidden');
                 }
             });
+
+
+            // properties.forEach((property, index) => {
+            //     if (index >= startIndex && index < endIndex) {
+            //         let clonedProperty = property.cloneNode(true);
+            //         propertiesContainer.appendChild(clonedProperty);
+            //     }
+            // });
         }
 
         // Initial visibility setup

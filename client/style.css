@@ -244,8 +244,7 @@ text-transform: capitalize;
     background: #F5F5F5;
 }
 .AREAONE:hover{
-    transform: translate(0,-20px);
-
+    transform: translate(0,-4px);
 }
 .Area1{
     padding: 20px 20px;

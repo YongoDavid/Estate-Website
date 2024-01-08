@@ -129,6 +129,9 @@ submitButton.addEventListener('click', function handleFormSubmission(event) {
         properties.push(propertyData)
         localStorage.setItem('properties', JSON.stringify(properties));
 
+        // update the total pages 
+       
+
 
         // ADD NEW PROPERTY TO THE LIST 
         createPropertyElement(propertyData)
