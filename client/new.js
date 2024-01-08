@@ -71,6 +71,10 @@ function createPropertyElement(propertyData) {
 
     let propertyElement = document.createElement('div')
     propertyElement.classList.add('AREAONE');
+
+    if (properties.length > 3) {
+        propertyElement.style.display = 'inline-block';
+    }
     propertyElement.innerHTML = `
             <div>
                 <img src="images/House3.png" alt="" width="250px">
@@ -125,23 +129,23 @@ function createPropertyElement(propertyData) {
 }
 // createPropertyElement(propertyData)
 // Event listener for form submission 
-const submitButton = document.getElementById('Uploadbtn');
-submitButton.addEventListener('click', function handleFormSubmission(event) {
-    event.preventDefault();
+// const submitButton = document.getElementById('Uploadbtn');
+// submitButton.addEventListener('click', function handleFormSubmission(event) {
+//     event.preventDefault();
 
-    let propertyData = extractFormData();
-    if (propertyData) {
-        // push new property data too loocal storage 
-        properties.push(propertyData)
-        localStorage.setItem('properties', JSON.stringify(properties));
+//     let propertyData = extractFormData();
+//     if (propertyData) {
+//         // push new property data too loocal storage 
+//         properties.push(propertyData)
+//         localStorage.setItem('properties', JSON.stringify(properties));
 
-        // update the total pages 
+//         // update the total pages 
        
 
 
-        // ADD NEW PROPERTY TO THE LIST 
-        createPropertyElement(propertyData)
-    }
-})
+//         // ADD NEW PROPERTY TO THE LIST 
+//         createPropertyElement(propertyData)
+//     }
+// })
 
 // TRYING TO POOITION NEW PROERTY CONTAINER 
