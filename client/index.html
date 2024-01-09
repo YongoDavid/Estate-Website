@@ -797,11 +797,16 @@
 
                 // update the total pages
                 TOTAL_PAGES = Math.ceil(properties.length / ELEMENTS_PER_PAGE);
+                console.log('Total page:', TOTAL_PAGES);
 
                 // add new property to the list
                 createPropertyElement(propertyData);
 
+                // console.log('Next try')
+
+                // console.log('current page before change :', currentPage)
                 changePage('next')
+                // console.log('Current page after change:', currentPage)
                 // show properties on the updated current page
                 updateVisibility();
             }
