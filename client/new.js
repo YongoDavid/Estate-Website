@@ -78,8 +78,8 @@ function createPropertyElement(propertyData) {
     propertyElement.innerHTML = `
             <div>
                 <img src="images/House3.png" alt="" width="250px">
-                <h2 id="title-property1" ${properties.length}>${propertyData.address}</h2>
-                <p id="type-property1" ${properties.length}>${propertyData.roomType}</p>
+                <h2 id="title-property1 ${properties.length}" >${propertyData.address}</h2>
+                <p id="type-property1 ${properties.length}" >${propertyData.roomType}</p>
                 <div class="price" id="price-property1" ${properties.length}>
                     <p>$${propertyData.price}/month</p>
                 </div>

@@ -760,7 +760,6 @@
         function changePage(page) {
             const properties = document.querySelectorAll('.AREAONE');
             const totalProperties = properties.length;
-
             // calculate the new page 
             if (page === 'Back' && currentPage > 1) {
                 currentPage--;
@@ -770,10 +769,10 @@
                 currentPage = page
             }
 
-            upateVisibility()
+            updateVisibility()
         }
 
-        function upateVisibility() {
+        function updateVisibility() {
             const properties = document.querySelectorAll('.AREAONE');
             properties.forEach((property, index) => {
                 const isElementVisible = index + 1 >= (currentPage - 1) * ELEMENTS_PER_PAGE + 1 && index + 1 <= currentPage * ELEMENTS_PER_PAGE;
@@ -802,12 +801,13 @@
                 // add new property to the list
                 createPropertyElement(propertyData);
 
+                changePage('next')
                 // show properties on the updated current page
                 updateVisibility();
             }
         });
 
-        upateVisibility();
+        updateVisibility();
     </script>
     <!-- <script>
 
