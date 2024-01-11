@@ -1,2 +1,2 @@
 // fetching link
-fetch('https')
+fetch('http')
