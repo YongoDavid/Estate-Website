@@ -1155,9 +1155,9 @@ font-weight: 400;
 line-height: normal;
 }
 
-RESPONSIVE SETUP 
+/* RESPONSIVE SETUP 
 @media screen , (max-width : 650px){
     .main{
 
     }
-}
+} */
