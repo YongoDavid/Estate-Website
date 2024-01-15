@@ -18,7 +18,8 @@ header {
     height: 10%;
 }
 nav{
-    width: 100%vw;
+    /* added styling  */
+    /* width: 100%vw; */
     padding-top: 20px;
     position: relative;
     display: flex;
@@ -56,7 +57,7 @@ overflow: hidden;
 }
 .Nav-background{
 /* Added new style  */
-width: 100%vw;
+/* width: 100%vw; */
 position: relative;
 z-index: -10;
 bottom: 5em;
@@ -193,7 +194,7 @@ main  img{
 /* THE COST INNER SECTION  */
 .Living-cost-area{
     /* added new style  */
-    width: 100%vw;
+    /* width: 100%vw; */
     padding: 30px;
     position: absolute;
     top: 120%;
@@ -253,7 +254,7 @@ text-transform: capitalize;
 /* THE LIST OF PROPERTIES SECTION  */
 .List-of-properties{
     /* added new style  */
-    width: 100%vw;
+    /* width: 100%vw; */
     background: #F5F5F5;
 }
 .AREAONE:hover{
@@ -620,7 +621,7 @@ letter-spacing: 0.1px;
 /* SEARCH ROOM SECTION  */
 .Search-room-section{
 /* added new styling  */
-width: 100%vw;
+/* width: 100%vw; */
 margin-top: 40px;
 padding: 20px 20px;
 margin-left: 80px;
@@ -735,7 +736,7 @@ line-height: 20px; /* 111.111% */
 /* THE FORM AREA  */
 .Form-Area{
 /* added new styling  */
-width: 100%vw;
+/* width: 100%vw; */
 margin-top: -18em;
 }
 .Form-Area > h3{
@@ -1010,7 +1011,7 @@ letter-spacing: 0.182px;
 
 .Comments-section{
 /* added new styling  */
-width: 100%vw;
+/* width: 100%vw; */
 width: 1440px;
 height: 490px;
 flex-shrink: 0;
@@ -1060,6 +1061,8 @@ font-weight: 400;
 line-height: 26px; /* 162.5% */
 }
 .comment-profile > img{
+/* added styling  */
+/* width: 100%vw; */
 position: relative;
 top: 0.1em;
 left: -0.1em;
