@@ -8,21 +8,22 @@
     /* background-color: black;
 } */
 
-/* header{
-   
-} */ */
+header {
+/* added new style  */
+    width: 100%vw;
+}
 
 /* NAVIGATION AREA  */
 .Nav-background{
     height: 10%;
 }
 nav{
+    width: 100%vw;
     padding-top: 20px;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 nav ul{
     display: flex;
@@ -54,6 +55,8 @@ height: 200px;
 overflow: hidden; 
 }
 .Nav-background{
+/* Added new style  */
+width: 100%vw;
 position: relative;
 z-index: -10;
 bottom: 5em;
@@ -76,6 +79,7 @@ z-index: 10;
 background: #FFF;
 }
 .Hero-content{
+    width: 100%vw;
     margin-top: 8em;
     display: flex;
     position: absolute;
@@ -159,6 +163,8 @@ background: var(--primary-color, #23A6F0);
 
 /* FIRST MAIN CONTENT  */
 main{
+/* added new style  */
+    width: 100%vw;
     margin-top: -3em;
     padding: 20px 20px;
     margin-left: 80px;
@@ -186,6 +192,8 @@ main  img{
 
 /* THE COST INNER SECTION  */
 .Living-cost-area{
+    /* added new style  */
+    width: 100%vw;
     padding: 30px;
     position: absolute;
     top: 120%;
@@ -244,6 +252,8 @@ text-transform: capitalize;
 
 /* THE LIST OF PROPERTIES SECTION  */
 .List-of-properties{
+    /* added new style  */
+    width: 100%vw;
     background: #F5F5F5;
 }
 .AREAONE:hover{
@@ -609,6 +619,8 @@ letter-spacing: 0.1px;
 
 /* SEARCH ROOM SECTION  */
 .Search-room-section{
+/* added new styling  */
+width: 100%vw;
 margin-top: 40px;
 padding: 20px 20px;
 margin-left: 80px;
@@ -722,6 +734,8 @@ line-height: 20px; /* 111.111% */
 }
 /* THE FORM AREA  */
 .Form-Area{
+/* added new styling  */
+width: 100%vw;
 margin-top: -18em;
 }
 .Form-Area > h3{
@@ -995,6 +1009,8 @@ letter-spacing: 0.182px;
 }
 
 .Comments-section{
+/* added new styling  */
+width: 100%vw;
 width: 1440px;
 height: 490px;
 flex-shrink: 0;
@@ -1070,9 +1086,10 @@ height: 2px;
 flex-shrink: 0;
 background: #F4511E;
 }
-/* .FooterArea{
-display: flex;
-} */
+.FooterArea{
+    /* added new styling  */
+    width: 100%vw;
+}
 
 .FooterDetials{
 position: relative;
@@ -1159,6 +1176,13 @@ line-height: normal;
 }
 
 /* RESPONSIVE SETUP  */
+/* laptop  */
+/* @media (min-width : 992px){
+    body{
+        max-width: 992px;
+    }
+} */
+
 /* mobile  */
 @media (max-width :576px){
     body{
