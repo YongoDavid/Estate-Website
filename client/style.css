@@ -22,6 +22,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 nav ul{
     display: flex;
@@ -41,6 +42,8 @@ nav li a {
 }
 #THELOGO{
     margin-right: 12em;
+    /* Added new style  */
+    max-width: 100px;
 }
 .Nav-background{
 position: relative;
@@ -1155,9 +1158,16 @@ font-weight: 400;
 line-height: normal;
 }
 
-/* RESPONSIVE SETUP 
-@media screen , (max-width : 650px){
-    .main{
-
+/* RESPONSIVE SETUP  */
+/* mobile  */
+@media (max-width :576px){
+    body{
+        max-width: 100vw;
     }
-} */
+    nav ul{
+        display: none;
+    }
+    .Nav-line {
+        min-width: 100vw;
+    }
+}
