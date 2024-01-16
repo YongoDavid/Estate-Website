@@ -16,7 +16,7 @@ const PORT = 3000
 const server = http.createServer((req, res) => {
     res.setHeader('Content-Type', 'Text/plain')
     res.writeHead(200)
-    res.write('Welcome')
+    res.write('Welcome to home page')
     res.end()
 
 
