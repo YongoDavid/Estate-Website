@@ -1151,7 +1151,6 @@ text-transform: uppercase;
 .Footer-copyright > p{
 position: relative;
 left: 32em;
-
 color: var(--Dark, #0A142F);
 text-align: right;
 font-family: Inter;

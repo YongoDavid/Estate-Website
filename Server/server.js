@@ -1,2 +1,0 @@
-// fetching link
-fetch('http')

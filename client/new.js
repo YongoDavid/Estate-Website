@@ -74,7 +74,7 @@ function createPropertyElement(propertyData) {
 
     if (properties.length > 3) {
         propertyElement.style.display = 'inline-block';
-    }
+    
     propertyElement.innerHTML = `
             <div>
                 <img src="images/House3.png" alt="" width="250px">
