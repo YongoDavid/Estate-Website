@@ -1,36 +1,20 @@
-// const http = require('http')
-// const server = http.createServer((req, res) => {
-//     res.setHeader('Content-Type' , 'Text/plain')
-// })
-// server.listen(1000, 'localhost', () => {
-//     console.log('server listening on port 1000')
-// })
-// const http = require('http')
-// const PORT = 3000
-// const server = http.createServer((req, res) => {
-//     res.setHeader('Content-Type', 'Text/plain')
-//     res.writeHead(200)
-//     res.write('Welcome to home page')
-//     res.end()
-// })
-// server.listen(3000, 'localhost' , () => {
-//     console.log('Listening on port 3000')
-// })
-// TRY SETTING UP SERVER 
-
-// MAIN EXPRESS SERVER
-
 const express = require('express');
+const morgan = require('morgan');
+const path = require('path');
 const app = express();
-const fs = require('fs');
+app.listen(5500);
 
-app.listen(3000);
+app.use(express.static('../client'))
+app.use(morgan('dev'))
+app.use((req,res,next)=>{
+    console.log('server started')
 
-app.get('/' , (req,res)=>{
-    // res.sendFile('index.html' , {root: __dirname , '..' , 'client'});
-    // app.use(express.static(path.join(__dirname, '..' , 'client')));
+    next()
+})
+
+app.get('/',(req,res)=>{
+    res.sendFile(path.join(__dirname, '../client/index.html'));
 });
 app.use((req,res)=>{
-    res.status(404).sendFile('404.html')
-});
-
+    res.sendFile(path.join(__dirname , '../client/404.html'));
+})
